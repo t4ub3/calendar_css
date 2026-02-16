@@ -1,3 +1,27 @@
+@font-face {
+    font-family: 'FunnelSans-Italic';
+    src: url('fonts/FunnelSans-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FunnelSans';
+    src: url('fonts/FunnelSans-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PoiretOne';
+    src: url('fonts/PoiretOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 * {
     --muted-teal: #85baa1ff;
     --vintage-grape: #544e61ff;
@@ -11,6 +35,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'FunnelSans', sans-serif;
 }
 
 .full-height {
@@ -21,6 +46,10 @@
     top: 0;
     height: var(--header-height);
     background: var(--muted-teal);
+}
+
+.header__title {
+    font-family: 'PoiretOne', 'FunnelSans', sans-serif;
 }
 
 .footer {
@@ -40,21 +69,28 @@
     padding-top: calc(var(--header-height) + 24px);
     padding-bottom: calc(var(--footer-height) + 24px);
 
-    display: grid;
-    gap: 16px;
-    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 48px;
 }
 
 .card {
-    border: 1px solid var(--vintage-grape);
     width: 80%;
     padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 #544e61AA;
+    background-color: white;
 }
 
-.card__headline {
-
+.card__title {
+    font-weight: 400;
 }
 
 .card__divider {
-    
+    border: none;
+    height: 1px;
+    background-color: var(--muted-teal);
+    margin: 08px 16px;    
 }
