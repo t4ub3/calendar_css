@@ -7,93 +7,102 @@
   </head>
   <body class="full-height">
     <div class="full-height">
-    <header class="header fixed">
-      <h1 class="header__title">Kalender 2026</h1>
-    </header>
-    <div class="main-layout full-height">
-      <section class="card">
-        <h2 class="card__title">Über den heutigen Tag</h2>
-        <hr class="card__divider">
-        <p>
-          Heute ist <span class="card__text--light">Mittwoch, der 11.02.2026</span>. Heute ist kein Feiertag, aber wir
-          haben trotzdem alle gute Laune.
-        </p>
-      </section>
-      <section class="card">
-        <h2 class="card__title">Kalenderansicht</h2>
-        <hr class="card__divider">
-        <table>
-          <thead>
-            <th>Montag</th>
-            <th>Dienstag</th>
-            <th>Mittwoch</th>
-            <th>Donnerstag</th>
-            <th>Freitag</th>
-            <th>Samstag</th>
-            <th>Sonntag</th>
-          </thead>
-          <tbody>
-            <tr>
-              <td colspan="6"></td>
-              <td>01</td>
-            </tr>
-            <tr>
-              <td>02</td>
-              <td>03</td>
-              <td>04</td>
-              <td>05</td>
-              <td>06</td>
-              <td>07</td>
-              <td>08</td>
-            </tr>
-            <tr>
-              <td>09</td>
-              <td>10</td>
-              <td>11</td>
-              <td>12</td>
-              <td>13</td>
-              <td>14</td>
-              <td>15</td>
-            </tr>
-            <tr>
-              <td>16</td>
-              <td>17</td>
-              <td>18</td>
-              <td>19</td>
-              <td>20</td>
-              <td>21</td>
-              <td>22</td>
-            </tr>
-            <tr>
-              <td>23</td>
-              <td>24</td>
-              <td>25</td>
-              <td>26</td>
-              <td>27</td>
-              <td>28</td>
-              <td></td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-      <section class="card">
-        <h2 class="card__title">Unnützes Wissen</h2>
-        <hr class="card__divider">
-        <ul class="card__list">
-          <li><span class="card__text--light">11</span> ist eine Primzahl</li>
-          <li><span class="card__text--light">1770810310ms </span>sind seit dem 01.01.1970 vergangen</li>
-          <li>
-            <span class="card__text--light">1919</span> - Friedrich Ebert wird Präsident der ersten deutschen Republik
-          </li>
-          <li><span class="card__text--light">1968</span> - Medison Square Garden wird eröffnet</li>
-          <li><span class="card__text--light">1990</span> - Nelson Mandela kommt nach 28 Jahren Haft frei</li>
-        </ul>
-      </section>
-
-      
+      <header class="header fixed">
+        <h1 class="header__title">Kalender 2026</h1>
+      </header>
+      <div class="main-layout">
+        <section class="card">
+          <h2 class="card__title">Über den heutigen Tag</h2>
+          <hr class="card__divider" />
+          <p>
+            Heute ist
+            <span class="card__text--light">Mittwoch, der 11.02.2026</span>.
+            Heute ist kein Feiertag, aber wir haben trotzdem alle gute Laune.
+          </p>
+        </section>
+        <section class="card">
+          <h2 class="card__title">Kalenderansicht</h2>
+          <hr class="card__divider" />
+          <div class="calendar">
+            <ul class="calendar__header">
+              <li class="calendar__week-nr">KW</li>
+              <li>Mo</li>
+              <li>Di</li>
+              <li>Mi</li>
+              <li>Do</li>
+              <li>Fr</li>
+              <li>Sa</li>
+              <li>So</li>
+            </ul>
+            <ol class="calendar__day-grid">
+              <li class="calendar__week-nr">05</li>
+              <li class="calendar__day--prev-month">26</li>
+              <li class="calendar__day--prev-month">27</li>
+              <li class="calendar__day--prev-month">28</li>
+              <li class="calendar__day--prev-month">29</li>
+              <li class="calendar__day--prev-month">30</li>
+              <li class="calendar__day--prev-month calendar__day--weekend">31</li>
+              <li class="calendar__day--weekend">1</li>
+              <li class="calendar__week-nr">06</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
+              <li>5</li>
+              <li>6</li>
+              <li class="calendar__day--weekend">7</li>
+              <li class="calendar__day--weekend">8</li>
+              <li class="calendar__week-nr">07</li>
+              <li>9</li>
+              <li>10</li>
+              <li class="calendar__day--today">11</li>
+              <li>12</li>
+              <li>13</li>
+              <li class="calendar__day--weekend">14</li>
+              <li class="calendar__day--weekend">15</li>
+              <li class="calendar__week-nr">08</li>
+              <li>16</li>
+              <li>17</li>
+              <li>18</li>
+              <li>19</li>
+              <li>20</li>
+              <li class="calendar__day--weekend">21</li>
+              <li class="calendar__day--weekend">22</li>
+              <li class="calendar__week-nr">09</li>
+              <li>23</li>
+              <li>24</li>
+              <li>25</li>
+              <li>26</li>
+              <li>27</li>
+              <li class="calendar__day--weekend">28</li>
+              <li class="calendar__day--next-month calendar__day--weekend">1</li>
+            </ol>
+          </div>
+        </section>
+        <section class="card">
+          <h2 class="card__title">Unnützes Wissen</h2>
+          <hr class="card__divider" />
+          <ul class="card__list">
+            <li><span class="card__text--light">11</span> ist eine Primzahl</li>
+            <li>
+              <span class="card__text--light">1770810310ms </span>sind seit dem
+              01.01.1970 vergangen
+            </li>
+            <li>
+              <span class="card__text--light">1919</span> - Friedrich Ebert wird
+              Präsident der ersten deutschen Republik
+            </li>
+            <li>
+              <span class="card__text--light">1968</span> - Medison Square
+              Garden wird eröffnet
+            </li>
+            <li>
+              <span class="card__text--light">1990</span> - Nelson Mandela kommt
+              nach 28 Jahren Haft frei
+            </li>
+          </ul>
+        </section>
+      </div>
+      <footer class="footer fixed">© Jonas Neumann, cdemy GmbH, 2026</footer>
     </div>
-    <footer class="footer fixed">© Jonas Neumann, cdemy GmbH, 2026</footer>
-    </div>
-</body>
   </body>
 </html>
