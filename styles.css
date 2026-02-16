@@ -41,7 +41,7 @@
 }
 
 body {
-    background-color: var(--platinum);
+    background-color: var(--platinum-light);
 }
 
 .full-height {
@@ -108,7 +108,7 @@ body {
     border: none;
     height: 1px;
     background-color: var(--muted-teal);
-    margin: 8px;
+    margin: 12px 8px;
 }
 
 .card__list {
@@ -121,11 +121,11 @@ body {
 
 .card__text--light {
     font-family: 'FunnelSans-Italic';
-    color: var(--slate-grey);
+    color: var(--muted-teal);
 }
 
-.calendar__header,
-.calendar__day-grid {
+.cal-monthly__header,
+.cal-monthly__day-grid {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-gap: 4px;
@@ -134,45 +134,54 @@ body {
     padding: 0;
 }
 
-.calendar li {
+.cal-monthly li {
     display: flex;
     align-items: center;
     justify-content: center;
     list-style: none;
 }
 
-.calendar__header li {
+.cal-monthly__header li {
     font-weight: 600;
     aspect-ratio: 1.5;
 }
 
-.calendar__day-grid li {
+.cal-monthly__day-grid li {
     aspect-ratio: 1;
     border: solid 1px var(--linen-dark);
     border-radius: 4px;
 }
 
-.calendar__week-nr {
+.cal-monthly__week-nr {
     color: var(--muted-teal);
     border: none !important;
 }
 
-.calendar__day--today {
+.cal-monthly__day--today {
     color: var(--vintage-grape);
     font-weight: 600;
     background-color: var(--linen-dark);
 }
 
-.calendar__day--prev-month, .calendar__day--next-month {
+.cal-monthly__day--prev-month, .cal-monthly__day--next-month {
     color: var(--platinum);
     border-color: var(--platinum) !important;
 }
 
-.calendar__day--weekend {
+.cal-monthly__day--weekend {
     background-color: var(--platinum-light);
 }
 
-.calendar__day--prev-month.calendar__day--weekend, .calendar__day--next-month.calendar__day--weekend {
+.cal-monthly__day--prev-month.cal-monthly__day--weekend, .cal-monthly__day--next-month.cal-monthly__day--weekend {
     color: white;
     border-color: var(--platinum) !important;
+}
+
+.cal-weekly__timetable {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 4px;
+    margin: 0 auto;
+    max-width: 70%;
+    padding: 0;
 }
